@@ -3,11 +3,16 @@ sudo: false
 
 language: cpp
 
+addons:
+  artifacts: true
+  debug: true
+  
 before_script:
   # Produce some output
   - ls
 
 script:
-  # Create a file
-  - ls > out.txt
+  - mkdir output
+  - ls > output/out.txt
+  - ls output
 
