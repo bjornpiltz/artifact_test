@@ -1,0 +1,13 @@
+dist: trusty
+sudo: false
+
+language: cpp
+
+before_script:
+  # Produce some output
+  - ls
+
+script:
+  # Create a file
+  - ls > out.txt
+
